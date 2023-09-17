@@ -1,0 +1,51 @@
+/* Center the container both horizontally and vertically */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% viewport height for vertical centering */
+    border: 1px solid #ccc; /* Optional border styling */
+    padding: 20px; /* Optional padding */
+    text-align: center; /* Optional text alignment */
+}
+
+/* Style for the image */
+.container img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+}
+
+/* Style for the paragraph */
+.container p {
+    font-size: 10px;
+    line-height: 1.4;
+
+}
+
+/* Style for the image inside the 'prince' div */
+.prince img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+}
+
+/* Style for the paragraph */
+.prince .image-width {
+    max-width: 200px; /* Set the maximum width to match the image width */
+}
+/* Style for the highlighted text within the paragraph */
+.prince .highlighted {
+    background: orange; /* Highlighted text background color */
+
+}
+
+/*Style for the underlined text within the paragraph*/
+.prince .underline{
+    text-decoration: underline; /* Add underline to the highlighted text */
+}
+
+/* Style for the specific text within a paragraph */
+.red-text {
+    color: red; /* Change this to your desired font color, e.g., red */
+}
+
+
+
