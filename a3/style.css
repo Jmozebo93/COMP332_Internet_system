@@ -1,0 +1,19 @@
+
+/* Styles for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Styles for table headers */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Styles for table data cells */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
