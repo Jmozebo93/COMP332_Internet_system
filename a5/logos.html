@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Logo</title>
+    <style>
+        .enlarged {
+            transform: scale(2);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+    <script>
+        $(document).ready(function (){
+            $("#pic1, #pic2, #pic3, #pic4, #pic5, #pic6").mouseenter(function(){
+
+                var txt = "In: " + $(this).data("value");
+                $(this).fadeTo(500, 0.5);
+                $("#In").html(txt);
+            });
+
+            $("#pic1, #pic2, #pic3, #pic4, #pic5, #pic6").mouseleave(function(){
+                var txt = 'Out: ' + $(this).data("value");
+                $(this).fadeTo(500, 1.0);
+                $("#Out").html(txt);
+            });
+
+            $("#pic1, #pic2, #pic3, #pic4, #pic5, #pic6").dblclick(function(){
+                window.location.href = $(this).data("url");
+            });
+
+            $("#pic1, #pic2, #pic3, #pic4, #pic5, #pic6").click(function(){
+                $(this).toggleClass('enlarged').css('opacity', 1.0);
+            });
+
+            $(document).mousemove(function(e){
+                var mouseX = e.pageX;
+                var mouseY = e.pageY;
+                $("#coordinates").html("Mouse X: " + mouseX + ", Y: " + mouseY);
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div id="logo1" style="justify-content: center">
+    <img src="crunchyroll_img.jpeg" id="pic1" width="80" height="100" data-value="Crunchyroll" data-url="https://www.crunchyroll.com/">
+    <img src="Funimation_img.jpeg" id="pic2"  with="5" height="100" data-value="Funimation" data-url="https://www.funimation.com/">
+    <img src="ign_img.jpeg" id="pic3"  width="80" height="100" data-value="Ign" data-url="https://www.ign.com/"><br>
+    <img src="fandom_img.jpeg" id="pic4"  width="80" height="100" data-value="Fandom" data-url="https://www.fandom.com/">
+    <img src="espn.jpeg" id="pic5" width="80" height="100" data-value="espn" data-url="https://www.espn.com/">
+    <img src="disneyPlus.jpeg" id="pic6" width="80" height="100" data-value="Disney+" data-url="https://www.disneyplus.com/">
+    <div id="In"></div>
+    <div id="Out"></div>
+    <div id="coordinates"></div>
+</div>
+</body>
+</html>
