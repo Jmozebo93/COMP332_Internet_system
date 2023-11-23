@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # COMP332 Internet Systems Repository
+=======
+# COMP322 Internet Systems Repository
+>>>>>>> 4ff8cd618879462861b551fdf080ec14ca9817e2
 
 This repository contains all my assignments, quizzes, and projects completed during the COMP332 Internet Systems course.
 
