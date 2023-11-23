@@ -1,0 +1,12 @@
+{
+  "name": "comp322-internet-systems",
+  "version": "1.0.0",
+  "description": "This repository contains all my assignments, quizzes, and projects completed during the COMP332 Internet Systems course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
