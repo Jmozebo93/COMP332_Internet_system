@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>COMP 322</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-$END$
+<button id="getButton">GET</button>
+<button id="postButton">POST</button>
+<button id="putButton">PUT</button>
+<button id="delButton">DELETE</button>
+
+<script>
+    $("#getButton").click(function(){
+        $.ajax({
+            url:"/comp322/grade",
+            type:"GET",
+            success: function(response){
+                console.log(response);
+            }
+        })
+    })
+
+    $("#postButton").click(function(){
+        $.ajax({
+            url:"/comp322/grade",
+            type:"POST",
+            success: function(response){
+                console.log(response);
+            }
+        })
+    })
+
+    $("#putButton").click(function(){
+        $.ajax({
+            url:"/comp322/grade",
+            type:"PUT",
+            success: function(response){
+                console.log(response);
+            }
+        })
+    })
+
+    $("#delButton").click(function(){
+        $.ajax({
+            url:"/comp322/grade",
+            type:"DELETE",
+            success: function(response){
+                console.log(response);
+            }
+        })
+    })
+
+</script>
+
 </body>
 </html>
